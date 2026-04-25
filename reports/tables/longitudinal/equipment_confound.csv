@@ -1,0 +1,4 @@
+subject_id,n_sessions,sample_rates_per_session,n_distinct_rates,consistent_equipment
+pd_nicolas,2,"{1: [44100], 2: [16000]}",2,False
+pd_robertor,2,"{1: [44100], 2: [16000]}",2,False
+pd_vitos,3,"{1: [44100], 2: [16000], 3: [16000]}",2,False
