@@ -101,7 +101,7 @@ reports/figures/*
 
 # OS
 .DS_Store
-EOF
+
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
