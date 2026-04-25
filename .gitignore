@@ -82,6 +82,27 @@ target/
 profile_default/
 ipython_config.py
 
+# Project data
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Audio
+*.wav
+*.mp3
+*.flac
+
+# Reports
+reports/figures/*
+!reports/figures/.gitkeep
+
+# OS
+.DS_Store
+EOF
+
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
