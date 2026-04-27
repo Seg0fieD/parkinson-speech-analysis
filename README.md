@@ -168,14 +168,14 @@ parkinson-speech-analysis/
 ├── notebooks/
 │   └── 04_eda.ipynb
 ├── src/
-│   ├── preprocess.py            # Step 2  — audio resampling + QC + manifest
-│   ├── features.py              # Step 3a — eGeMAPS extraction
-│   ├── features_w2v2.py         # Step 3b — wav2vec2 embeddings
-│   ├── eda.py                   # Step 4
-│   ├── stats.py                 # Step 5
-│   ├── models.py                # Step 6  — classifiers + leakage diagnostic
-│   ├── longitudinal.py          # Step 6b — MixedLM + equipment-confound flag
-│   └── interpret.py             # Step 7a — SHAP + bootstrap CIs + provenance
+│   ├── preprocess.py            — audio resampling + QC + manifest
+│   ├── features.py              — eGeMAPS extraction
+│   ├── features_w2v2.py         — wav2vec2 embeddings
+│   ├── eda.py                   
+│   ├── stats.py                 
+│   ├── models.py                — classifiers + leakage diagnostic
+│   ├── longitudinal.py          — MixedLM + equipment-confound flag
+│   └── interpret.py             — SHAP + bootstrap CIs + provenance
 ├── reports/
 │   ├── figures/                 (eda/, longitudinal/, interpret/)
 │   └── tables/                  (stats/, models/, longitudinal/, interpret/)
@@ -214,14 +214,14 @@ data/raw/
 From the project root, in order:
 
 ```bash
-python -m src.preprocess        # ~2 min   — subjects.csv, manifest.csv, resampled audio
-python -m src.features          # ~5 min   — eGeMAPS
-python -m src.features_w2v2     # ~20–40 min on MPS / GPU; resumable via checkpoint
-python -m src.eda               # ~30 sec  — figures only
-python -m src.stats             # ~30 sec
-python -m src.models            # ~1 min
-python -m src.longitudinal      # ~10 sec
-python -m src.interpret         # ~5–10 min — SHAP + bootstrap
+python -m src.preprocess       
+python -m src.features         
+python -m src.features_w2v2     
+python -m src.eda               
+python -m src.stats             
+python -m src.models            
+python -m src.longitudinal      
+python -m src.interpret         
 ```
 
 Each script writes to `reports/` and is independent of every later step.
