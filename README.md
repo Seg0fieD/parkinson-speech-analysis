@@ -56,8 +56,8 @@ Per-task OLS for each acoustic marker, BH-FDR within family, session==1 only.
 **Section A — PD vs elderly_hc, 16 tasks × 6 primary markers (96 tests):** 32/96 significant at q < 0.05.
 
 Direction-of-effect on reading tasks (B1, B2, FB1, PR1):
-- HNR ↑ in PD by ~2.0–2.2 dB *(opposite of textbook)*
-- Shimmer ↓ in PD *(opposite of textbook)*
+- HNR ↑ in PD by ~2.0–2.2 dB 
+- Shimmer ↓ in PD 
 - F0 variability (`stddevNorm`) ↓ in PD *(consistent with monotone-speech literature)*
 - Loudness ↑ in PD on sustained vowels
 
